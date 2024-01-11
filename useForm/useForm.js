@@ -46,3 +46,12 @@ export const useForm = <T extends Object>( initState: T ) => {
     }
 
 }
+
+// A continuacion su uso en componente
+
+    const { form, onChange, isSubscribed } = useForm({
+        name: '',
+        email: '',
+        phone: '',
+        isSubscribed: false
+    });
